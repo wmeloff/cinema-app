@@ -1,0 +1,21 @@
+<h2>WELCOME TO CINEMA THEATER</h2>
+
+<h3>Add Film</h3>
+<form #filmForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="id">id</label>
+    <input type="text" class="form-control" id="id" required  [(ngModel)]="film.id" #id="ngModel" name="id" >
+  </div>
+
+  <div class="form-group">
+    <label for="name">name</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="film.name" #name="ngModel" name="name">
+  </div>
+  <div class="form-group">
+    <label for="description">description</label>
+    <input type="text" class="form-control" id="description" [(ngModel)]="film.description" #description="ngModel" name="description">
+  </div>
+
+  <button type="submit" class="btn btn-success" (click)="newHero(); filmForm.reset()">Submit</button>
+
+</form>
