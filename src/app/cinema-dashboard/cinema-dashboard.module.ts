@@ -1,12 +1,13 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { SchedulerComponent }  from './scheduler.component';
+import { CinemaDashboardComponent }  from './cinema-dashboard.component';
 import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ SchedulerComponent ],
-  bootstrap:    [ SchedulerComponent ]
+  declarations: [ CinemaDashboardComponent ],
+  bootstrap:    [ CinemaDashboardComponent ]
 })
-export class SchedulerModule { }
+export class CinemaDashboardModule {
+}

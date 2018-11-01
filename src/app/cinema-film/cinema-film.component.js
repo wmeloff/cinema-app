@@ -11,9 +11,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var common_1 = require("@angular/common");
-var film_service_1 = require("../services/film.service");
+var film_service_1 = require("../cinema-services/cinema-film.service");
 // import { HeroService }  from '../hero.service';
-var FilmComponent = (function () {
+var CinemaFilmComponent = (function () {
     function FilmComponent(route, 
         // private heroService: HeroService,
         location, _filmService) {
@@ -40,15 +40,15 @@ var FilmComponent = (function () {
     };
     return FilmComponent;
 }());
-FilmComponent = __decorate([
+CinemaFilmComponent = __decorate([
     core_1.Component({
         selector: 'film',
-        templateUrl: './film.component.html',
-        providers: [film_service_1.FilmService]
+        templateUrl: './cinema-film.component.html',
+        providers: [film_service_1.CinemaFilmService]
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute,
         common_1.Location,
-        film_service_1.FilmService])
-], FilmComponent);
-exports.FilmComponent = FilmComponent;
-//# sourceMappingURL=film.component.js.map
+        film_service_1.CinemaFilmService])
+], CinemaFilmComponent);
+exports.FilmComponent = CinemaFilmComponent;
+//# sourceMappingURL=cinema-film.component.jsnent.js.map

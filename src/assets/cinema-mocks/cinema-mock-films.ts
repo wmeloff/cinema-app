@@ -1,6 +1,6 @@
-import {Film} from '../classes/film';
+import {CinemaFilm} from '../../app/cinema-classes/cinema-film';
 
-export var FILMS: Film[] = [
+export var FILMS: CinemaFilm[] = [
   {
     id: '00',
     name: 'Богемская рапсодия',

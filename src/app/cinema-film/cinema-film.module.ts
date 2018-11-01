@@ -1,12 +1,12 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FilmComponent }  from './film.component';
+import { CinemaFilmComponent }  from './cinema-film.component';
 import {FormsModule} from "@angular/forms";
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ FilmComponent ],
-  bootstrap:    [ FilmComponent ]
+  declarations: [ CinemaFilmComponent ],
+  bootstrap:    [ CinemaFilmComponent ]
 })
-export class FilmModule { }
+export class CinemaFilmModule { }

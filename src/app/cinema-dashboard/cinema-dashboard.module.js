@@ -7,19 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var dashboard_component_1 = require("./dashboard.component");
+var dashboard_component_1 = require("./cinema-dashboard.component");
 var forms_1 = require("@angular/forms");
-var DashboardModule = (function () {
+var CinemaDashboardModule = (function () {
     function DashboardModule() {
     }
     return DashboardModule;
 }());
-DashboardModule = __decorate([
+CinemaDashboardModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [dashboard_component_1.DashboardComponent],
-        bootstrap: [dashboard_component_1.DashboardComponent]
+        declarations: [dashboard_component_1.CinemaDashboardComponent],
+        bootstrap: [dashboard_component_1.CinemaDashboardComponent]
     })
-], DashboardModule);
-exports.DashboardModule = DashboardModule;
-//# sourceMappingURL=dashboard.module.js.map
+], CinemaDashboardModule);
+exports.DashboardModule = CinemaDashboardModule;
+//# sourceMappingURL=cinema-dashboard.module.js.map.js.map

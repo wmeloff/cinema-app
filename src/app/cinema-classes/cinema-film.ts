@@ -1,4 +1,4 @@
-export class Film {
+export class CinemaFilm {
   id: string;
   name: string;
   description: string;
@@ -8,5 +8,4 @@ export class Film {
     this.name = name;
     this.description = description;
   }
-
 }

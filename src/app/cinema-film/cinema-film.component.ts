@@ -2,28 +2,28 @@ import {Component} from '@angular/core';
 
 import {ActivatedRoute} from '@angular/router';
 import {Location} from '@angular/common';
-import {Film} from '../classes/film';
-import {FilmService} from '../services/film.service';
+import {CinemaFilm} from '../cinema-classes/cinema-film';
+import {CinemaFilmService} from '../cinema-services/cinema-film.service';
 
 // import { HeroService }  from '../hero.service';
 
 @Component({
   selector: 'film',
-  templateUrl: './film.component.html',
-  providers: [FilmService]
+  templateUrl: './cinema-film.component.html',
+  providers: [CinemaFilmService]
 })
 
 
-export class FilmComponent {
+export class CinemaFilmComponent {
 
 
-  public film: Film;
+  public film: CinemaFilm;
 
   constructor(
     private route: ActivatedRoute,
     // private heroService: HeroService,
     private location: Location,
-    private _filmService: FilmService
+    private _filmService: CinemaFilmService
   ) {
   }
 

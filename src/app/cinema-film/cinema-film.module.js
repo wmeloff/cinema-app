@@ -7,19 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var scheduler_component_1 = require("./scheduler.component");
+var film_component_1 = require("./cinema-film.component");
 var forms_1 = require("@angular/forms");
-var SchedulerModule = (function () {
-    function SchedulerModule() {
+var CinemaFilmModule = (function () {
+    function FilmModule() {
     }
-    return SchedulerModule;
+    return FilmModule;
 }());
-SchedulerModule = __decorate([
+CinemaFilmModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [scheduler_component_1.SchedulerComponent],
-        bootstrap: [scheduler_component_1.SchedulerComponent]
+        declarations: [film_component_1.CinemaFilmComponent],
+        bootstrap: [film_component_1.CinemaFilmComponent]
     })
-], SchedulerModule);
-exports.SchedulerModule = SchedulerModule;
-//# sourceMappingURL=scheduler.module.js.map
+], CinemaFilmModule);
+exports.FilmModule = CinemaFilmModule;
+//# sourceMappingURL=cinema-film.module.js.map.js.map

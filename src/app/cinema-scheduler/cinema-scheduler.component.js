@@ -9,21 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var film_service_1 = require("../services/film.service");
-var SchedulerComponent = (function () {
+var film_service_1 = require("../cinema-services/cinema-film.service");
+var CinemaSchedulerComponent = (function () {
     function SchedulerComponent(_filmService) {
         this._filmService = _filmService;
         this.films = this._filmService.getFilms();
     }
     return SchedulerComponent;
 }());
-SchedulerComponent = __decorate([
+CinemaSchedulerComponent = __decorate([
     core_1.Component({
         selector: 'scheduler',
-        templateUrl: './scheduler.component.html',
-        providers: [film_service_1.FilmService]
+        templateUrl: './cinema-scheduler.component.html',
+        providers: [film_service_1.CinemaFilmService]
     }),
-    __metadata("design:paramtypes", [film_service_1.FilmService])
-], SchedulerComponent);
-exports.SchedulerComponent = SchedulerComponent;
-//# sourceMappingURL=scheduler.component.js.map
+    __metadata("design:paramtypes", [film_service_1.CinemaFilmService])
+], CinemaSchedulerComponent);
+exports.SchedulerComponent = CinemaSchedulerComponent;
+//# sourceMappingURL=cinema-scheduler.component.js.map.js.map

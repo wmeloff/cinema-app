@@ -1,5 +1,5 @@
 "use strict";
-var Film = (function () {
+var CinemaFilm = (function () {
     function Film(id, name, description) {
         this.id = id;
         this.name = name;
@@ -7,5 +7,5 @@ var Film = (function () {
     }
     return Film;
 }());
-exports.Film = Film;
-//# sourceMappingURL=film.js.map
+exports.Film = CinemaFilm;
+//# sourceMappingURL=cinema-film.jsfilm.js.map

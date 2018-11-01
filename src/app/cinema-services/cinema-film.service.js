@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var mock_films_1 = require("../mocks/mock-films");
 var film_1 = require("../classes/film");
-var FilmService = (function () {
+var CinemaFilmService = (function () {
     function FilmService() {
         this.local = window.localStorage;
     }
@@ -45,8 +45,8 @@ var FilmService = (function () {
     };
     return FilmService;
 }());
-FilmService = __decorate([
+CinemaFilmService = __decorate([
     core_1.Injectable()
-], FilmService);
-exports.FilmService = FilmService;
-//# sourceMappingURL=film.service.js.map
+], CinemaFilmService);
+exports.FilmService = CinemaFilmService;
+//# sourceMappingURL=cinema-film.service.jsvice.js.map
