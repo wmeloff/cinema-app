@@ -1,7 +1,12 @@
+<h3>Source to view</h3>
 <div *ngIf="film">
   <h2>{{film.name | uppercase}}</h2>
-  <div>{{film.id}}</div>
-  <div>{{film.description}}</div>
-
-  <button (click)="goBack()">go back</button>
+  <div><span>Description: </span>{{film.description}}</div>
 </div>
+
+<h3>View to source </h3>
+<div *ngIf="film">
+  <div><span>Name: </span><input [(ngModel)]="film.name" placeholder="Film name"></div>
+  <div><span>Description: </span><input [(ngModel)]="film.description" placeholder="Film description"></div>
+</div>
+<button (click)="goBack()">Go back to list</button>
