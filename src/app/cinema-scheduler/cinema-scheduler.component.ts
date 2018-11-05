@@ -5,7 +5,6 @@ import {CinemaFilmService} from '../cinema-services/cinema-film.service';
 @Component({
   selector: 'scheduler',
   templateUrl: './cinema-scheduler.component.html',
-  providers: [CinemaFilmService]
 })
 
 export class CinemaSchedulerComponent {

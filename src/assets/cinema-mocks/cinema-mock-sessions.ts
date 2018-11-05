@@ -34,5 +34,16 @@ export var SESSIONS: CinemaSession[] = [
       new CinemaChair("ch2", false),
       new CinemaChair("ch3", true),
     ]
+  },
+  {
+    id: "s4",
+    isActive: true,
+    time: "20-00",
+    filmId: "f2",
+    chairs: [
+      new CinemaChair("ch1", false),
+      new CinemaChair("ch2", false),
+      new CinemaChair("ch3", true),
+    ]
   }
 ];

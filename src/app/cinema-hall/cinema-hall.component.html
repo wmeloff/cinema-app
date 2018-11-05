@@ -1,5 +1,9 @@
-<h2>Cinema Hall</h2>
-
+<h4>Cinema Hall</h4>
+<div *ngIf="sessions.length == 0">There are no sessions on '{{getFilm(filmId)}}'</div>
 <div *ngFor="let session of sessions" class="cinema-hall">
-  <div class="cinema-hall__sessions">{{session}}</div>
+  <div class="cinema-hall__sessions"> {{getFilm(session.filmId)}}</div>
+  <div class="cinema-hall__sessions">{{session.time}}</div>
+
+  <div class="cinema-hall__sessions">--------------</div>
+
 </div>

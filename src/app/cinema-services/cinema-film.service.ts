@@ -1,8 +1,11 @@
 import {Injectable} from '@angular/core';
 import {FILMS} from '../../assets/cinema-mocks/cinema-mock-films';
 import {CinemaFilm} from '../cinema-classes/cinema-film';
+import {SESSIONS} from "../../assets/cinema-mocks/cinema-mock-sessions";
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class CinemaFilmService {
 
   public local: Storage = window.localStorage;
@@ -38,5 +41,16 @@ export class CinemaFilmService {
       films.push(film);
       this.local.setItem('films', JSON.stringify(films));
     }
+  }
+
+  public getFilmById(id: string): CinemaFilm {
+    let film: CinemaFilm;
+    let jsonObjects = JSON.parse(this.local.getItem('films'));
+    if (jsonObjects == null) {
+      film = JSON.parse(JSON.stringify(FILMS)).filter(film => film.id === id);
+    } else {
+      film = jsonObjects.filter(film => film.id === id);
+    }
+    return film;
   }
 }

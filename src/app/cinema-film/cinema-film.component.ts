@@ -10,7 +10,6 @@ import {CinemaFilmService} from '../cinema-services/cinema-film.service';
 @Component({
   selector: 'film',
   templateUrl: './cinema-film.component.html',
-  providers: [CinemaFilmService]
 })
 
 

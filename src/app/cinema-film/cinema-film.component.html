@@ -10,3 +10,6 @@
   <div><span>Description: </span><input [(ngModel)]="film.description" placeholder="Film description"></div>
 </div>
 <button (click)="goBack()">Go back to list</button>
+<div *ngIf="film">
+  <a routerLink="/book/{{film.id}}">Book tickets</a>
+</div>
